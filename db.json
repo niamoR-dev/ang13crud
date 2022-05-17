@@ -18,16 +18,16 @@
   },
   "products": [
     {
-      "ProductName": "vcxvbv",
-      "ProductDescription": "cool",
-      "ProductPrice": "jaja",
-      "id": 1
-    },
-    {
       "ProductName": "romain",
       "ProductDescription": "romain",
       "ProductPrice": "romain",
       "id": 2
+    },
+    {
+      "ProductName": "coucou",
+      "ProductDescription": "tu veux voir",
+      "ProductPrice": "mon git ?",
+      "id": 3
     }
   ]
 }

@@ -1,3 +1,6 @@
+
+
+
 export default class Product {
   id!: number;
   ProductName!: string;

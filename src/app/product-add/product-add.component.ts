@@ -15,6 +15,9 @@ export class ProductAddComponent implements OnInit {
     this.createForm();
   }
 
+  ngOnInit() {
+  }
+
   createForm() {
     this.angForm = this.formBuilder.group({
       ProductName: ['', Validators.required],
@@ -26,6 +29,5 @@ export class ProductAddComponent implements OnInit {
   addProduct(ProductName: any, ProductDescription: any, ProductPrice: any) {
     this.productsService.addProduct(ProductName, ProductDescription, ProductPrice);
   }
-  ngOnInit() {
-  }
+
 }
