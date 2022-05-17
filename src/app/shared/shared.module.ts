@@ -18,6 +18,8 @@ const Components = [
 @NgModule({
   declarations: [
 
+
+
   ],
 
   imports: [

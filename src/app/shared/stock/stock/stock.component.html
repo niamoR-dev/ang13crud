@@ -1,0 +1,17 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <td>Quantité en stock</td>
+      <td>Référence produit</td>
+      <td>Date entrée en stock</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let stock of stocks">
+      <td>{{ stock.quantite }}</td>
+      <td>{{ stock.idProduct }}</td>
+      <td>{{ stock.dateStock }}</td>
+
+    </tr>
+  </tbody>
+</table>

@@ -18,16 +18,30 @@
   },
   "products": [
     {
-      "ProductName": "romain",
-      "ProductDescription": "romain",
-      "ProductPrice": "romain",
-      "id": 2
-    },
-    {
       "ProductName": "coucou",
       "ProductDescription": "tu veux voir",
       "ProductPrice": "mon git ?",
       "id": 3
+    },
+    {
+      "ProductName": "aspirateur",
+      "ProductDescription": "fonctionne, dépend de la note au TP",
+      "ProductPrice": "99.99",
+      "id": 4
+    }
+  ],
+  "stocks": [
+    {
+      "quantite": 10,
+      "idProduct": 3,
+      "dateStock": "18/02/1991",
+      "id": 1
+    },
+    {
+      "quantite": 30,
+      "idProduct": 4,
+      "dateStock": "18/02/1991",
+      "id": 2
     }
   ]
 }

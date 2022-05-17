@@ -7,6 +7,8 @@ import { ProductAddModule } from '../shared/product-add/product-add.module';
 import { ProductEditModule } from '../shared/product-edit/product-edit.module';
 import { ProductGetModule } from '../shared/product-get/product-get.module';
 import { SharedModule } from '../shared/shared.module';
+import { StockComponent } from '../shared/stock/stock/stock.component';
+import { StockModule } from '../shared/stock/stock.module';
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule,
     ProductAddModule,
     ProductEditModule,
-    ProductGetModule
+    ProductGetModule,
+    StockModule
   ],
 
   exports: [

@@ -15,10 +15,15 @@ const routes: Routes = [
     loadChildren: () => import('./shared/product-get/product-get.module').then(m => m.ProductGetModule)
   },
   {
+    path: 'stocks',
+    loadChildren: () => import('./shared/stock/stock.module').then(m => m.StockModule)
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full'
   },
+
 ];
 
 @NgModule({
