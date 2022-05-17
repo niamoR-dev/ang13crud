@@ -2,25 +2,21 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductAddComponent } from './product-add/product-add.component';
-import { ProductGetComponent } from './product-get/product-get.component';
-import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ProductsService } from './service/products.service';
+import { ProductsService } from './core/web-services/products.service';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductAddComponent,
-    ProductGetComponent,
-    ProductEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CoreModule
   ],
   providers: [ProductsService],
   bootstrap: [AppComponent]
