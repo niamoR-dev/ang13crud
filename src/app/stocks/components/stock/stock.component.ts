@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Stock } from 'src/app/core/model/stock.model';
-import { StocksService } from 'src/app/core/web-services/stocks.service';
+import { StocksService } from 'src/app/stocks/web-services/stocks.service';
+import { Stock } from '../../models/stock.model';
 
 @Component({
   selector: 'app-stock',

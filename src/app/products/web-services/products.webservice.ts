@@ -1,5 +1,6 @@
-import { Injectable } from '@angular/core'; import { HttpClient } from '@angular/common/http';
-import Product from '../model/product.model';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import Product from '../models/product.model';
 
 
 @Injectable({
@@ -7,12 +8,14 @@ import Product from '../model/product.model';
 })
 
 export class ProductsService {
+
   uri = 'http://localhost:3000/products';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+
+  }
 
   addProduct(ProductName: any, ProductDescription: any, ProductPrice: any) {
-
 
     const obj = {
       ProductName,

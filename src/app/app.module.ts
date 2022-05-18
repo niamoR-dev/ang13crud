@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { ProductsService } from './core/web-services/products.service';
 import { CoreModule } from './core/core.module';
+import { ProductsModule } from './products/products.module';
+import { SharedModule } from './shared/shared.module';
+import { StocksModule } from './stocks/stocks.module';
 
 @NgModule({
   declarations: [
@@ -14,11 +14,9 @@ import { CoreModule } from './core/core.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    CoreModule
+    CoreModule,
   ],
-  providers: [ProductsService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
