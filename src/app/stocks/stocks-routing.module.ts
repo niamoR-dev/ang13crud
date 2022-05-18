@@ -4,14 +4,10 @@ import { StockComponent } from './components/stock/stock.component';
 
 const routes: Routes = [
   {
-    path: 'stocks',
-    component: StockComponent
-  },
-  {
     path: '',
-    redirectTo: 'stocks',
+    component: StockComponent,
     pathMatch: 'full'
-  }
+  },
 ];
 
 @NgModule({

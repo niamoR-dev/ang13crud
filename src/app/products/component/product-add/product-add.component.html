@@ -7,8 +7,9 @@
           formControlName="ProductName" #ProductName />
       </div>
 
-      <div *ngIf="angForm.controls['ProductName'].invalid && (angForm.controls['Product
-  Name'].dirty || angForm.controls['ProductName'].touched)" class="alert alert-danger">
+      <div
+        *ngIf="angForm.controls['ProductName'].invalid && (angForm.controls['ProductName'].dirty || angForm.controls['ProductName'].touched)"
+        class="alert alert-danger">
         <div *ngIf="angForm.controls['ProductName'].errors?.required"> Product Name is required.
         </div>
       </div>
@@ -31,7 +32,7 @@
       </div>
 
       <div
-        *ngIf="angForm.controls['ProductPrice'].invalid && (angForm.controls['ProductP rice'].dirty || angForm.controls['ProductPrice'].touched)"
+        *ngIf="angForm.controls['ProductPrice'].invalid && (angForm.controls['ProductPrice'].dirty || angForm.controls['ProductPrice'].touched)"
         class="alert alert-danger">
         <div *ngIf="angForm.controls['ProductPrice'].errors?.required"> Product Price is required.
         </div>

@@ -1,4 +1,5 @@
 
+import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -14,10 +15,14 @@ import { CoreRoutingModule } from './core-routing.module';
     CoreRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    CommonModule
+
   ],
 
   exports: [
+    HttpClientModule,
+    ReactiveFormsModule,
   ]
 })
 export class CoreModule {

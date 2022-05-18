@@ -18,7 +18,6 @@ export class StockComponent implements OnInit {
 
     this.stocksService.getStocks().subscribe(
       (data: Stock[]) => {
-
         this.stocks = data;
       });
   }

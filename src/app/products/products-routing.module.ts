@@ -1,26 +1,33 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProductAddComponent } from './component/product-add/product-add/product-add.component';
+import { ProductAddComponent } from './component/product-add/product-add.component';
+import { ProductEditComponent } from './component/product-edit/product-edit.component';
+import { ProductGetComponent } from './component/product-get/product-get.component';
 /**
  * On part du chemin relatif : /products
  */
 const routes: Routes = [
 
   {
-    path: 'product/create',
+    path: 'create',
     component: ProductAddComponent
   },
   {
+    path: 'edit/:id',
+    component: ProductEditComponent
+
+  },
+  {
     path: '',
-    redirectTo: 'product/create',
+    component: ProductGetComponent,
     pathMatch: 'full'
   }
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes,
-  )],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class ProductsRoutingModule { }
+
